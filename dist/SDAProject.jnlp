@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="SDAProject.jnlp">
+  <information>
+    <title>SDAProject</title>
+    <vendor>Admin</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="SDAProject.jar" size="114830" download="eager" />
+    <jar href="lib\commons-beanutils-1.8.2.jar" size="231891" download="eager" />
+    <jar href="lib\commons-collections-3.2.1.jar" size="575389" download="eager" />
+    <jar href="lib\commons-collections4-4.1.jar" size="751238" download="eager" />
+    <jar href="lib\commons-digester-2.1.jar" size="196768" download="eager" />
+    <jar href="lib\commons-javaflow-20060411.jar" size="96529" download="eager" />
+    <jar href="lib\commons-logging-1.1.jar" size="52592" download="eager" />
+    <jar href="lib\controlsfx-8.40.13.jar" size="1213306" download="eager" />
+    <jar href="lib\fontawesomefx-8.9.jar" size="571068" download="eager" />
+    <jar href="lib\fontawesomefx-commons-8.13.jar" size="20607" download="eager" />
+    <jar href="lib\fontawesomefx-fontawesome-4.7.0-1.jar" size="135304" download="eager" />
+    <jar href="lib\groovy-all-2.0.1.jar" size="6191960" download="eager" />
+    <jar href="lib\jasperreports-5.6.0.jar" size="4989676" download="eager" />
+    <jar href="lib\jasperreports-chart-themes-5.6.0.jar" size="164416" download="eager" />
+    <jar href="lib\jasperreports-extensions-3.5.3.jar" size="35621" download="eager" />
+    <jar href="lib\jasperreports-fonts-5.6.0.jar" size="2478093" download="eager" />
+    <jar href="lib\javafx-ui-controls.jar" size="1201545" download="eager" />
+    <jar href="lib\jfoenix-8.0.2.jar" size="2442326" download="eager" />
+    <jar href="lib\jfoenix-8.0.8.jar" size="2708772" download="eager" />
+    <jar href="lib\jfoenix-9.0.8.jar" size="2419463" download="eager" />
+    <jar href="lib\jfreechart-1.0.12.jar" size="1368681" download="eager" />
+    <jar href="lib\joda-time-2.9.1.jar" size="625986" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.15-bin.jar" size="785998" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.47-bin.jar" size="1007505" download="eager" />
+    <jar href="lib\poi-3.17.jar" size="2701171" download="eager" />
+    <jar href="lib\poi-ooxml-3.17.jar" size="1479023" download="eager" />
+    <jar href="lib\poi-ooxml-schemas-3.17.jar" size="5924600" download="eager" />
+    <jar href="lib\recurrence-8.4.2.jar" size="159924" download="eager" />
+    <jar href="lib\view-8.4.2.jar" size="745112" download="eager" />
+    <jar href="lib\xmlbeans-2.6.0.jar" size="2730866" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="SDAProject"  name="SDAProject" />
+  <update check="always"/>
+</jnlp>

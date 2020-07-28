@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="689.0" prefWidth="968.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DashboardController">
+   <children>
+      <Pane layoutY="-2.0" prefHeight="139.0" prefWidth="950.0" style="-fx-background-color: #2D75E8;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-6.0" AnchorPane.topAnchor="-2.0">
+         <children>
+            <Label layoutX="73.0" layoutY="30.0" text="File Information" textFill="WHITE">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Label layoutX="79.0" layoutY="91.0" text="Java File Descripation" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="comboxlist" focusColor="#5b76c6" layoutX="677.0" layoutY="30.0" onAction="#ClassActionButton" prefHeight="25.0" prefWidth="257.0" promptText="Select the Class" unFocusColor="#1b1919" />
+         </children>
+      </Pane>
+      <GridPane hgap="15.0" layoutX="45.0" layoutY="158.0" prefHeight="96.0" prefWidth="869.0" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="158.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Pane prefHeight="80.0" prefWidth="201.0" style="-fx-background-color: #3A84C3; -fx-background-radius: 1em;">
+               <children>
+                  <Label alignment="CENTER" layoutX="35.0" layoutY="64.0" text="Total Variables" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="totalvariable" alignment="CENTER" layoutX="72.0" layoutY="20.0" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="103.0" prefWidth="200.0" style="-fx-background-color: #EEAC4C; -fx-background-radius: 1em;" GridPane.columnIndex="1">
+               <children>
+                  <Label layoutX="22.0" layoutY="69.0" text="Public Variable" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="totalpublicvariable" layoutX="59.0" layoutY="25.0" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="103.0" prefWidth="200.0" style="-fx-background-color: #5CB55B; -fx-background-radius: 1em;" GridPane.columnIndex="2">
+               <children>
+                  <Label layoutX="25.0" layoutY="69.0" text="Private Variable" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="totalprivatemethod" layoutX="79.0" layoutY="25.0" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="103.0" prefWidth="200.0" style="-fx-background-color: #D7534E; -fx-background-radius: 1em;" GridPane.columnIndex="3">
+               <children>
+                  <Label layoutX="11.0" layoutY="69.0" text="Protected Variable" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="totalprotectedvariable" layoutX="90.0" layoutY="25.0" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+      <GridPane hgap="15.0" layoutX="41.0" layoutY="286.0" prefHeight="96.0" prefWidth="869.0" AnchorPane.leftAnchor="41.0" AnchorPane.rightAnchor="34.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="202.0" minWidth="10.0" prefWidth="200.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="226.0" minWidth="10.0" prefWidth="214.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="202.0" minWidth="10.0" prefWidth="202.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Pane prefHeight="84.0" prefWidth="192.0" style="-fx-background-color: #1c6189; -fx-background-radius: 1em;">
+               <children>
+                  <Label alignment="CENTER" layoutX="35.0" layoutY="64.0" text="Total Method" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="totalmethod" alignment="CENTER" layoutX="72.0" layoutY="20.0" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="103.0" prefWidth="200.0" style="-fx-background-color: #5c7ece; -fx-background-radius: 1em;" GridPane.columnIndex="1">
+               <children>
+                  <Label layoutX="22.0" layoutY="69.0" text="Total Getter Method" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="totalgetter" layoutX="59.0" layoutY="25.0" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="103.0" prefWidth="200.0" style="-fx-background-color: #685bcc; -fx-background-radius: 1em;" GridPane.columnIndex="2">
+               <children>
+                  <Label layoutX="25.0" layoutY="69.0" text="Total Setter Method" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="totalsetter" layoutX="79.0" layoutY="25.0" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="455.0" layoutY="10.0" prefHeight="103.0" prefWidth="200.0" style="-fx-background-color: #685bcc; -fx-background-radius: 1em;" GridPane.columnIndex="3">
+               <children>
+                  <Label layoutX="25.0" layoutY="69.0" text="Constractors" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="constractor" layoutX="79.0" layoutY="25.0" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+      <JFXTextArea fx:id="textid" layoutX="13.0" layoutY="412.0" prefHeight="253.0" prefWidth="768.0" AnchorPane.bottomAnchor="19.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="184.0" AnchorPane.topAnchor="412.0" />
+      <Pane layoutX="805.0" layoutY="396.0" prefHeight="70.0" prefWidth="139.0" style="-fx-background-color: #685bcc; -fx-background-radius: 1em;" AnchorPane.bottomAnchor="223.0" AnchorPane.leftAnchor="805.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="396.0">
+         <children>
+            <Label layoutX="46.0" layoutY="44.0" text="Interface" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="inhertencevalue" layoutX="63.0" text="0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="805.0" layoutY="476.0" prefHeight="70.0" prefWidth="139.0" style="-fx-background-color: #685bcc; -fx-background-radius: 1em;" AnchorPane.bottomAnchor="143.0" AnchorPane.leftAnchor="805.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="476.0">
+         <children>
+            <Label layoutX="39.0" layoutY="44.0" text="Inheritence" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="inheritencevalue" layoutX="63.0" text="0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="805.0" layoutY="555.0" prefHeight="70.0" prefWidth="139.0" style="-fx-background-color: #685bcc; -fx-background-radius: 1em;" AnchorPane.bottomAnchor="64.0" AnchorPane.leftAnchor="805.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="555.0">
+         <children>
+            <Label layoutX="41.0" layoutY="53.0" text="Main Class" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="mainclassvalue" layoutX="63.0" text="0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

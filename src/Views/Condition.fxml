@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="442.0" prefWidth="581.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ConditionController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <AnchorPane prefHeight="114.0" prefWidth="581.0" style="-fx-background-color: #3c32a8;" AnchorPane.bottomAnchor="328.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="151.0" layoutY="39.0" text="Java Class Descripation Tool" textFill="#fcf7f7">
+               <font>
+                  <Font name="Book Antiqua" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="187.0" layoutY="111.0" prefHeight="36.0" prefWidth="208.0" text="Tool Descrpation" textFill="#360505">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="textid" editable="false" layoutX="3.0" layoutY="141.0" prefHeight="207.0" prefWidth="576.0" text="1. It is only work with Java classes.  &#10;     Step 1:  Select the Java Classes where is located.&#10;      Step 2 : Click Next&#10;      It gives the following details about the file&#10;1.&#9;File Path&#10;2.&#9;Writeable&#10;3.&#9;Readable&#10;4.&#9;File size&#10;5.&#9;Interface Information&#10;6.&#9;Inheritance Information &#10;7.&#9;Variable Information (Scope, type, Name)&#10;8.&#9;Getter Methods&#10;9.&#9;Setter Methods&#10;10.&#9;User defined Methods&#10;11.&#9;Overload Methods&#10;12.&#9; Constructor Information&#10;13.&#9;Relationship with Classes ">
+         <font>
+            <Font name="Cambria Math" size="12.0" />
+         </font></TextArea>
+      <JFXButton fx:id="NextButton" layoutX="437.0" layoutY="392.0" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="123.0" stylesheets="@../css/fullpackstyling.css" text="Next">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <CheckBox fx:id="checkBox" layoutX="28.0" layoutY="365.0" mnemonicParsing="false" onAction="#actiononcheckbox" prefHeight="17.0" prefWidth="493.0" text="I agree to the software tool descrpation" />
+    </children>
+</AnchorPane>

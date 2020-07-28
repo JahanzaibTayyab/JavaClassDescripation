@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="408.0" prefWidth="581.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <AnchorPane prefHeight="106.0" prefWidth="581.0" style="-fx-background-color: #3c32a8;" AnchorPane.bottomAnchor="302.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="151.0" layoutY="39.0" text="Java Class Descripation Tool" textFill="#fcf7f7">
+               <font>
+                  <Font name="Book Antiqua" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="44.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/COMSATS_new_logo.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="415.0" layoutY="137.0" prefHeight="36.0" prefWidth="110.0" text="Designed By " textFill="#360505">
+         <font>
+            <Font name="Bookman Old Style" size="13.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="textid" editable="false" layoutX="360.0" layoutY="167.0" prefHeight="142.0" prefWidth="200.0" text="Bushra Ashraf (FA17-BSE-002)" />
+      <JFXButton fx:id="NextButton" layoutX="408.0" layoutY="332.0" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="123.0" stylesheets="@../css/fullpackstyling.css" text="Next">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+    </children>
+</AnchorPane>

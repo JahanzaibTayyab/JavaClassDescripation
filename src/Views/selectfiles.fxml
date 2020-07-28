@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="442.0" prefWidth="581.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SelectfilesController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <AnchorPane prefHeight="114.0" prefWidth="581.0" style="-fx-background-color: #3c32a8;" AnchorPane.bottomAnchor="328.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="151.0" layoutY="39.0" text="Java Class Descripation Tool" textFill="#fcf7f7">
+               <font>
+                  <Font name="Book Antiqua" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="187.0" layoutY="111.0" prefHeight="36.0" prefWidth="208.0" text="Select the Files" textFill="#360505" AnchorPane.bottomAnchor="295.0" AnchorPane.leftAnchor="187.0" AnchorPane.rightAnchor="186.0" AnchorPane.topAnchor="111.0">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="textid" editable="false" layoutX="3.0" layoutY="141.0" prefHeight="207.0" prefWidth="576.0" AnchorPane.bottomAnchor="94.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="141.0">
+         <font>
+            <Font name="Cambria Math" size="12.0" />
+         </font></TextArea>
+      <JFXButton fx:id="selectFiles" layoutX="412.0" layoutY="348.0" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="123.0" stylesheets="@../css/fullpackstyling.css" text="Select the Files" AnchorPane.bottomAnchor="58.0" AnchorPane.leftAnchor="412.0" AnchorPane.rightAnchor="46.0" AnchorPane.topAnchor="348.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="nextButton" layoutX="420.0" layoutY="392.0" onAction="#handleAfterButtonAction" prefHeight="36.0" prefWidth="123.0" stylesheets="@../css/fullpackstyling.css" text="Next">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+    </children>
+</AnchorPane>
